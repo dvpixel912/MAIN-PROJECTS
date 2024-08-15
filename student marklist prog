@@ -1,0 +1,54 @@
+#include <iostream>
+
+class hi
+{
+    private:
+    int x,y,z,w,q,a;
+    
+    public:
+    int get();
+    int put();
+};
+
+int hi::get()
+{
+    std::cout<<"STUDENT MARKLIST\n";
+    std::cout<<"~~~~~~~~~~~~~~~~\n";
+    std::cout<<"     TERM 1     \n";
+    std::cout<<"     ~~~~~~     \n";
+    std::cout<<"  Enter the required details given\n";
+    std::cout<<"Enter your math mark:\n";
+    std::cin>>x;
+    std::cout<<"Enter your science mark:\n";
+    std::cin>>y;
+    std::cout<<"Enter your english mark:\n";
+    std::cin>>z;
+    std::cout<<"Enter your roll number:\n";
+    std::cin>>w;
+}
+
+int hi::put()
+{
+    
+    std::cout<<"Your math mark is:\n"<<x;
+    std::cout<<"Your science mark is:\n"<<y;
+    std::cout<<"Your english mark is:\n"<<z;
+    q=x+y+z;
+    std::cout<<"Your total mark is:\n"<<q;
+    a=q/2;
+    std::cout<<"Your average mark is:\n"<<a;
+    if(q>100)
+    std::cout<<"Result:Pass\n";
+    else
+    std::cout<<"Result:Fail\n";
+    std::cout<<"Roll number:\n"<<w;
+    return(0);
+}
+
+int main()
+{
+    class hi h;
+    h.get();
+    h.put();
+    exit(0);
+}
