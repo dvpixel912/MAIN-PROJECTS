@@ -1,0 +1,26 @@
+//making a rectangle
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    int height, width,symbol;
+    std::cout<<"Height:";
+    std::cin>>height;
+    std::cout<<"Weight:";
+    std::cin>>width;
+    std::cout<<"Symbol:";
+    std::cin>>symbol;
+    std::cout<<"\n";
+    
+    for(int h=0;h<height;h++) {
+    for(int w=0;w<width;w++)  {
+        std::cout<<symbol;
+    }
+    std::cout<< endl;
+    }
+    
+    system("pause>0");
+}
